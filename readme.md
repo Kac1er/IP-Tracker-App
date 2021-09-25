@@ -7,8 +7,9 @@
 ## General info
 
 ```
-The idea of this project comes from [frontendmentor.io IP Tracker App Challenge](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
+The idea of this project comes from Frontendmentor.io (link below).
 ```
+[frontendmentor.io IP Tracker App Challenge](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0)
 
 ## Technologies
 
