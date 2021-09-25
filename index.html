@@ -33,22 +33,23 @@
 						<img src="./assets/icons/icon-arrow.svg" alt="Arrow icon" />
 					</button>
 				</form>
+                <p class="header__error-text header__error-text--active">error</p>
 				<div class="header__information">
 					<div class="header__information-box">
 						<p class="header__information-heading">ip address</p>
-						<p class="header__information-description">192.212.174.101</p>
+						<p class="header__information-description header__information-description--ip">-</p>
 					</div>
 					<div class="header__information-box">
 						<p class="header__information-heading">location</p>
-						<p class="header__information-description">Brooklyn, NY 10001</p>
+						<p class="header__information-description header__information-description--location">-</p>
 					</div>
 					<div class="header__information-box">
 						<p class="header__information-heading">timezone</p>
-						<p class="header__information-description">UTC - 05:00</p>
+						<p class="header__information-description header__information-description--timezone">-</p>
 					</div>
 					<div class="header__information-box">
 						<p class="header__information-heading">isp</p>
-						<p class="header__information-description">SpaceX Starlink</p>
+						<p class="header__information-description header__information-description--isp">-</p>
 					</div>
 				</div>
 			</div>
@@ -58,6 +59,7 @@
 				<div class="map" id="location-map"></div>
 			</section>
 		</main>
-		<script src="./js/api.js"></script>
+		<script src="./js/api.js" type="module"></script>
+        <script src="./js/main.js" type="module"></script>
 	</body>
 </html>
