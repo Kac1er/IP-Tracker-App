@@ -8,6 +8,14 @@ const API_LINK = "https://geo.ipify.org/api/v1?";
 const API_KEY = "apiKey=at_OGsNfruwfq3N0kebkikSJFA1hxfWV";
 const MAP = L.map("location-map");
 
+const MAP_ICON = new L.Icon({
+	iconUrl: './assets/icons/icon-location.svg',
+	iconSize: [35, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
 export const getLocation = (address = "") => {
 	const URL = `${API_LINK + API_KEY}&ipAddress=${address}&domain=${address}`;
 	toggleLoader();
@@ -31,6 +39,10 @@ export const getLocation = (address = "") => {
 
 const setMap = async ({ location: { lat, lng } }) => {
 	await MAP.setView([lat, lng], 13);
+
+	L.marker([lat, lng], {
+		icon: MAP_ICON,
+	}).addTo(MAP);
 };
 
 L.tileLayer(

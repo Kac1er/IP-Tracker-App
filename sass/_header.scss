@@ -1,13 +1,76 @@
-
-
 .header {
-    background-image: url('../assets/images/pattern-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    &__container {
-        max-width: 1000px;
-        width: 100%;
-        margin: 0 auto;
-    }
+	background-image: url("../assets/images/pattern-bg.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 350px;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1em;
+		padding-top: 1em;
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__heading {
+		color: #fff;
+		font-size: 2.4rem;
+		font-weight: 400;
+	}
+	&__input {
+		padding: 1em 2em;
+		border: 0;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+	&__error-text {
+		display: none;
+		color: $error;
+
+		&--active {
+			display: block;
+		}
+	}
+	&__button {
+		padding: 1.2em;
+		background-color: $very-dark-grey;
+		border: 0;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	&__form {
+		display: flex;
+	}
+	&__information {
+		min-width: 300px;
+		position: relative;
+		margin: 0.5em 1em;
+		padding: 1em;
+		background-color: #fff;
+		text-align: center;
+		box-shadow: 0 2px 12px 0 hsla(0, 0, 0, 0.4);
+		border-radius: 5px;
+		z-index: 1;
+
+		&-box {
+			padding: 0.5em;
+		}
+		&-heading,
+		&-description {
+			padding: 0.5em 0;
+		}
+		&-heading {
+			color: $dark-gray;
+			font-size: 1.2rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+		}
+		&-description {
+			font-size: 2rem;
+			font-weight: 700;
+		}
+	}
 }
