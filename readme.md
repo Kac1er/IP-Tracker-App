@@ -2,6 +2,7 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [Screenshots](#screenshots)
 - [Setup](#setup)
 
 ## General info
@@ -26,6 +27,10 @@ The project was created using:
 - HTML
 - CSS (Pre-processor SASS)
 - JavaScript (ES6)
+
+## Screenshots
+
+![screenshot](https://user-images.githubusercontent.com/67519122/134807465-931cf6ba-3c7a-4519-bdcf-7a515fdd384d.png)
 
 ## Setup
 
