@@ -6,6 +6,7 @@ const errorText = document.querySelector(".header__error-text");
 const informationFields = [
 	...document.querySelectorAll(".header__information-description "),
 ];
+const loaderBox = document.querySelector(".loader");
 
 export const showErrorMessage = message => {
 	errorText.classList += " header__error-text--active";
@@ -16,12 +17,12 @@ const clearErrorMessage = () => {
 	errorText.textContent = "";
 };
 
-const checkInputValue = () => (formIpInput.value.trim() ? true : false);
+const checkInputValue = () => formIpInput.value.trim();
 
 const fetchAddress = e => {
 	e.preventDefault();
 	if (!checkInputValue()) {
-		return showErrorMessage("Wypełnij odpowiednie pola");
+		return showErrorMessage("Fill in the appropriate fields.");
 	}
 	clearErrorMessage();
 	getLocation(formIpInput.value);
@@ -38,6 +39,11 @@ export const displayAddressData = ({
 		(field, i) => (field.textContent = informations[i])
 	);
 };
+
+export const toggleLoader = () => {
+	loaderBox.classList.toggle("loader--active");
+	document.body.classList.toggle('sticky-body');
+}
 
 export const resetFields = () => {
 	informationFields.forEach(field => (field.textContent = "-"));

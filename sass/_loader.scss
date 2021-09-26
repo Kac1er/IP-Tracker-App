@@ -1,0 +1,28 @@
+.loader {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+
+	&__text {
+		color: rgb(255, 255, 255);
+		font-size: 3.4rem;
+		transition: transform 0.3s, opacity 0.3s;
+        transform: translateY(100px);
+        opacity: 0;
+	}
+
+    &--active {
+        display: flex;
+        .loader__text {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

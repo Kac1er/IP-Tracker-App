@@ -20,8 +20,11 @@
 		<link rel="stylesheet" href="./css/global.css" />
 	</head>
 	<body>
+		<div class="loader">
+			<p class="loader__text">Downloading data...</p>
+		</div>
 		<header class="header">
-			<div class="wrapper header__container">
+			<div class="header__container">
 				<h1 class="header__heading">IP Address Tracker</h1>
 				<form class="header__form">
 					<input
@@ -33,23 +36,23 @@
 						<img src="./assets/icons/icon-arrow.svg" alt="Arrow icon" />
 					</button>
 				</form>
-                <p class="header__error-text header__error-text--active">error</p>
+				<p class="header__error-text header__error-text--active">error</p>
 				<div class="header__information">
 					<div class="header__information-box">
 						<p class="header__information-heading">ip address</p>
-						<p class="header__information-description header__information-description--ip">-</p>
+						<p class="header__information-description">-</p>
 					</div>
 					<div class="header__information-box">
 						<p class="header__information-heading">location</p>
-						<p class="header__information-description header__information-description--location">-</p>
+						<p class="header__information-description">-</p>
 					</div>
 					<div class="header__information-box">
 						<p class="header__information-heading">timezone</p>
-						<p class="header__information-description header__information-description--timezone">-</p>
+						<p class="header__information-description">-</p>
 					</div>
 					<div class="header__information-box">
 						<p class="header__information-heading">isp</p>
-						<p class="header__information-description header__information-description--isp">-</p>
+						<p class="header__information-description">-</p>
 					</div>
 				</div>
 			</div>
@@ -60,6 +63,6 @@
 			</section>
 		</main>
 		<script src="./js/api.js" type="module"></script>
-        <script src="./js/main.js" type="module"></script>
+		<script src="./js/main.js" type="module"></script>
 	</body>
 </html>

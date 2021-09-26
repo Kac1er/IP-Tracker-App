@@ -1,0 +1,13 @@
+
+
+.header {
+    background-image: url('../assets/images/pattern-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

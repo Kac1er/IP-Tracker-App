@@ -13,9 +13,14 @@ html {
 
 body {
 	font-size: 1.6rem;
-    font-family: 'Rubik', sans-serif;
+	font-family: "Rubik", sans-serif;
 }
 
+.sticky-body {
+	overflow: hidden;
+}
+
+@import "./loader";
 @import "./header";
 @import "./map";
 @import "./media";
