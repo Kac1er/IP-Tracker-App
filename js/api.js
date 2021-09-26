@@ -7,7 +7,6 @@ import {
 const API_LINK = "https://geo.ipify.org/api/v1?";
 const API_KEY = "apiKey=at_OGsNfruwfq3N0kebkikSJFA1hxfWV";
 const MAP = L.map("location-map");
-
 const MAP_ICON = new L.Icon({
 	iconUrl: './assets/icons/icon-location.svg',
 	iconSize: [35, 41],

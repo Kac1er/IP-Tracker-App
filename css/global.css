@@ -85,7 +85,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
-  padding-top: 1em;
+  padding-top: 2em;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -106,7 +106,7 @@ input {
 
 .header__error-text {
   display: none;
-  color: #ed2c2c;
+  color: #fff;
 }
 
 .header__error-text--active {
@@ -119,6 +119,13 @@ input {
   border: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.header__button:hover {
+  opacity: 0.7;
 }
 
 .header__form {
